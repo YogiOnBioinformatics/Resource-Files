@@ -34,7 +34,7 @@ cat {insert species}_gencode_vm23_UCSC_browser.bed | grep -v "_fix" | grep -v "_
 ```
 # get promoters by flanking upstream 1000bp (strandedness enforced) and take first 6 columns 
 
-bedtools flank -i genes/hg38_gencode_v41_UCSC_browser.bed -g chrom_sizes/hg38.chrom.sizes -l 1000 -r 0 -s  | cut -f1-6 > promoters/hg38_flank_1kb.bed
+bedtools flank -i genes/{insert species}_gencode_v41_UCSC_browser.bed -g chrom_sizes/{insert species}.chrom.sizes -l 1000 -r 0 -s  | cut -f1-6 > promoters/{insert species}_flank_1kb_gencode_v41_UCSC_browser.bed
 ```
 
 📂 `tss/`: 
