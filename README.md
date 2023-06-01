@@ -37,6 +37,11 @@ cat {insert species}_gencode_vm23_UCSC_browser.bed | grep -v "_fix" | grep -v "_
 bedtools flank -i genes/{insert species}_gencode_v41_UCSC_browser.bed -g chrom_sizes/{insert species}.chrom.sizes -l 1000 -r 0 -s  | cut -f1-6 > promoters/{insert species}_flank_1kb_gencode_v41_UCSC_browser.bed
 ```
 
+📂 `transcription_factors/`: 
+
+Human transcription factor ENSEMBL IDs, names and other metadata as pulled from [https://doi.org/10.1016/j.cell.2018.01.029](https://doi.org/10.1016/j.cell.2018.01.029)
+
+
 📂 `tss/`: 
 
 Contains BED files of Transcription Start Sites (TSS) for each species using [refTSS version 3.3](http://reftss.clst.riken.jp/datafiles/3.3/). 
