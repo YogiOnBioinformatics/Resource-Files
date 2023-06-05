@@ -21,13 +21,7 @@ Tab-delimited text files indicating size of chromosomes per species.
 
 📂 `genes/`: 
 
-Genes from `GENCODE` for each species using [UCSC Table Browser](https://genome.ucsc.edu/cgi-bin/hgTables) `BED` format. 
-
-```
-# use grep -v to filter out non-official chromosomes
-
-cat {insert species}_gencode_vm23_UCSC_browser.bed | grep -v "_fix" | grep -v "_alt" | grep -v "_random" | grep -v "chrUn_"
-```
+More info can be found in `genes/README.md`.
 
 📂 `promoters/`:
 
