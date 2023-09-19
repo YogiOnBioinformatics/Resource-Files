@@ -19,6 +19,10 @@ bedtools slop -i tss/{insert species}_refTSS_v3.3_UCSC_browser.bed -g chrom_size
 
 Tab-delimited text files indicating size of chromosomes per species.
 
+📂 `gene_ontology/`: 
+
+Association file creation for `GOAtools` usage. 
+
 📂 `genes/`: 
 
 More info can be found in `genes/README.md`.
